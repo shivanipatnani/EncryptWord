@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="Encryptword.cs" />
     <Compile Include="EncryptMain.cs" />
-    <Compile Include="p1.cs" />
+    <Compile Include="driver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

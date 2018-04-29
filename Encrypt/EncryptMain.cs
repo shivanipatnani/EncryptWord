@@ -1,5 +1,5 @@
 ﻿/*============================================================================
- * Name        : p1.cs
+ * Name        : driver.cs
  * Author      : Shivani
  * Version     : 1.0
  * Copyright   : Your copyright notice
@@ -27,8 +27,8 @@ namespace Encrypt
         { 
             var rnd = new Random(5);
             int caesar_cipher = rnd.Next(5);
-            EncryptWord1.p1.testValidEncryption();
-            EncryptWord1.p1.testInvalidInputEncryption();
+            EncryptWord1.driver.testValidEncryption();
+            EncryptWord1.driver.testInvalidInputEncryption();
             string input;
             Console.Write("\n******************READY TO PLAY THE WORD GUESSING GAME ??*****************");
             Console.Write("\n");
@@ -39,7 +39,7 @@ namespace Encrypt
             try
             {
                 EncryptWord encryptWord = new EncryptWord(input, caesar_cipher);
-                EncryptWord1.p1.userInputOption(ref encryptWord);
+                EncryptWord1.driver.userInputOption(ref encryptWord);
             }
             catch (Exception e)
             {
